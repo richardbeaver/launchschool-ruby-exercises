@@ -1,0 +1,5 @@
+Layout/LineLength:
+  Max: 80
+
+Style/BlockComments:
+  Enabled: false
