@@ -15,11 +15,11 @@ center_of('x') == 'x'
 # ==============================================
 
 def center_of(string)
-  middle_idx = string.size / 2
+  middle_idx = (string.size / 2.0).ceil - 1
 
   if string.size.odd?
     string[middle_idx]
   else
-    string[middle_idx - 1, 2]
+    string[middle_idx, 2]
   end
 end
