@@ -27,8 +27,8 @@ leap_year?(400) == true
 # ==============================================
 
 def leap_year?(year)
-  if year < 1752 && (year % 4).zero?
-    true
+  if year < 1752
+    (year % 4).zero?
   elsif (year % 400).zero?
     true
   elsif (year % 100).zero?
